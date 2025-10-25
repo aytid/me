@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body>
-    <!-- Header -->
     <header>
         <div class="nav">
             <div class="brand">
@@ -31,7 +31,6 @@
                     <li><a href="#blog">Blogs</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#founder">Career</a></li>
                 </ul>
             </nav>
             <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Open menu">
@@ -42,7 +41,6 @@
         </div>
     </header>
 
-    <!-- Overlay + Mobile Nav -->
     <div id="overlay"></div>
     <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
         <button class="close-btn" id="mobileClose" aria-label="Close menu">&times;</button>
@@ -52,16 +50,14 @@
             <li><a href="#blog">Blogs</a></li>
             <li><a href="#products">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#founder">Career</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero"
         style="position: relative; padding-top: calc(var(--header-height) - 80px); overflow: hidden; background-color: #eaf9ec;">
 
-        <!-- Particle Background -->
-        <div id="particles-js" style="position: absolute; top:0; left:0; width:100%; height:100%; z-index: 0;"></div>
+
+        <div id="particles-js"></div>
 
         <div class="hero-wrap" style="position: relative; z-index: 1;">
             <div>
@@ -79,20 +75,34 @@
     </section>
 
 
-
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h3 class="section-title">About Me</h3>
             <p class="section-sub">A passionate developer skilled in full stack development, ServiceNow solutions, and
                 software automation. Bringing ideas to life through code and innovation.</p>
             <div class="grid about-grid">
-                <div class="about-card">
-                    <h4>Professional Background</h4>
-                    <p>Currently Platform Developer with Kaptius, Hyderabad, experienced in ServiceNow development,
-                        scripting, workflow management, portal and catalog configurations.</p>
-                    <img src="kaptiusLogo.jpg" alt="">
+                <div class="about-card education-card">
+                    <h4>Career</h4>
+                    <div class="timeline">
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h5>Platform Developer at Kaptius</h5>
+                                <p>Hyderabad</p>
+                                <span class="tag">October 2024 - Present</span>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h5>Associate Developer at Kaptius</h5>
+                                <p>Hyderabad</p>
+                                <span class="tag">January 2024 - October 2024</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="about-card education-card">
                     <h4>Education</h4>
                     <div class="timeline">
@@ -128,7 +138,6 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
     <section class="blog-highlight" id="blog">
         <div class="blog-highlight-container">
             <h2 class="blog-highlight-title">📚 My Blog</h2>
@@ -136,11 +145,10 @@
                 Sometimes I share insights about <span>ServiceNow tricks</span>, common issues we face,
                 and other interesting use cases that might help in real-world scenarios.
             </p>
-            <a href="http://rohanaditya-servicenow.vercel.app/" class="blog-highlight-btn">Click here to visit</a>
+            <a href="blog.html" class="blog-highlight-btn">Click here to visit</a>
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="benefits">
         <div class="container">
             <h3 class="section-title">Skills</h3>
@@ -182,13 +190,11 @@
             </div>
         </div>
     </section>
-    <!-- Certifications -->
     <section id="gallery" class="gallery">
         <div class="container">
             <h3 class="section-title">Certifications</h3>
             <p class="section-sub">ServiceNow Mainline and Micro Certifications</p>
             <div class="certificates">
-                <!-- Mainline Certifications -->
                 <div class="swiper gallerySwiper">
                     <h4 class="text-center mb-3">Mainline ServiceNow Certifications (3)</h4>
                     <div class="swiper-wrapper">
@@ -217,7 +223,6 @@
                     <div class="swiper-pagination"></div>
                 </div>
 
-                <!-- Micro-Certifications -->
                 <div class="swiper gallerySwiper">
                     <h4 class="text-center mt-5 mb-3">ServiceNow Micro-Certifications (9)</h4>
                     <div class="swiper-wrapper">
@@ -295,20 +300,18 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="products">
         <div class="container">
             <h3 class="section-title">Projects</h3>
             <p class="section-sub">Projects that showcase my experience and interests.</p>
             <div class="grid product-grid">
                 <article class="product">
-                    <img src="eBuddy.png" alt="e-Buddy Project" />
+                    <img src="ebuddy.png" alt="e-Buddy Project" />
                     <div class="info">
                         <div class="tag">Python, Streamlit</div>
                         <h4>e-Buddy</h4>
                         <p>Academic companion for attendance tracking and SGPA estimation.</p>
-                        <a href="https://rohan-aditya-ebuddy.streamlit.app/"
-                            class="btn btn-outline-primary btn-sm mt-2">Visit Project</a>
+                        <a href="https://rohan-aditya-ebuddy.streamlit.app/" class="btn">Visit Project</a>
                     </div>
                 </article>
                 <article class="product">
@@ -317,7 +320,7 @@
                         <div class="tag">Streamlit, JSON</div>
                         <h4>Room Expenses Tracker</h4>
                         <p>App to log and split roommate expenses using GitHub JSON storage.</p>
-                        <a href="https://mgboys.streamlit.app/" class="btn btn-outline-primary btn-sm mt-2">Visit
+                        <a href="https://mgboys.streamlit.app/" class="btn">Visit
                             Project</a>
                     </div>
                 </article>
@@ -327,8 +330,7 @@
                         <div class="tag">HTML, CSS, JS, PHP, MySQL</div>
                         <h4>Student Mark Management System</h4>
                         <p>A full-stack solution for digitizing student marks.</p>
-                        <a href="https://aytid.github.io/zphs/index.html"
-                            class="btn btn-outline-primary btn-sm mt-2">Visit Project</a>
+                        <a href="https://aytid.github.io/zphs/index.html" class="btn">Visit Project</a>
                     </div>
                 </article>
                 <article class="product">
@@ -337,18 +339,16 @@
                         <div class="tag">HTML, CSS, Bootstrap, JavaScript</div>
                         <h4>Urban-Utopia</h4>
                         <p>E-commerce website for shopping items built using HTML, CSS, Bootstrap, and JavaScript.</p>
-                        <a href="https://aytid.github.io/Urban-Utopia/home.html"
-                            class="btn btn-outline-primary btn-sm mt-2">Visit Project</a>
+                        <a href="https://aytid.github.io/Urban-Utopia/home.html" class="btn">Visit Project</a>
                     </div>
                 </article>
                 <article class="product">
-                    <img src="kits-navigation2.png" alt="KITS Navigation" />
+                    <img src="kits-navigation.png" alt="KITS Navigation" />
                     <div class="info">
                         <div class="tag">HTML, CSS, JavaScript</div>
                         <h4>KITS Navigation</h4>
                         <p>Campus block-to-block navigation web app using HTML, CSS, and JavaScript.</p>
-                        <a href="https://aytid.github.io/kitsNavigation/index.html"
-                            class="btn btn-outline-primary btn-sm mt-2">Visit Project</a>
+                        <a href="https://aytid.github.io/kitsNavigation/index.html" class="btn">Visit Project</a>
                     </div>
                 </article>
                 <article class="product">
@@ -357,76 +357,82 @@
                         <div class="tag">Python, Streamlit, sklearn</div>
                         <h4>Stock Price Prediction</h4>
                         <p>Forecasting app using machine learning techniques.</p>
-                        <a href="https://github.com/aytid/Stock-price-prediction"
-                            class="btn btn-outline-primary btn-sm mt-2">View Details</a>
+                        <a href="https://github.com/aytid/Stock-price-prediction" class="btn">View Details</a>
                     </div>
                 </article>
             </div>
         </div>
     </section>
 
+    <section id="contact" class="contact-snappy">
+        <div class="container contact-container">
 
+            <div class="contact-text-block">
+                <h3>Contact & Connect</h3>
+                <p>
+                    As a developer, I am always open to new projects, collaborations, and discussions about technology.
+                    Use the links in the card to connect directly.
+                </p>
 
-    <!-- Creative Career Section with inline CSS -->
-    <section id="founder" style="background: #f9fafb; padding: 70px 20px;">
-        <div style="max-width: 900px; margin: 0 auto;">
-            <h3 style="text-align: left; margin-bottom: 40px; font-weight: 700; font-size: 2rem; color: #181a1f;">
-                Career Milestones
-            </h3>
-
-            <div style="position: relative; padding-left: 40px; border-left: 3px solid #2f9e44;">
-
-                <div style="position: relative; margin-bottom: 40px; padding-left: 0px;">
-
-                    <h4 style="margin-bottom: 6px; font-weight: 600; font-size: 1.4rem; color: #181a1f;">
-                        Platform Developer
-                    </h4>
-                    <h5
-                        style="color: #5b6068; margin-top: 0; margin-bottom: 10px; font-weight: 400; font-style: italic;">
-                        Kaptius, Hyderabad
-                    </h5>
-                    <p style="margin: 0; font-style: italic; font-weight: 500; color: #0077cc;">
-                        Oct 2024 – Present
-                    </p>
+                <div>
+                    <p><strong>Primary Inquiry:</strong> <a
+                            href="mailto:adityathirumala20@gmail.com">adityathirumala20@gmail.com</a></p>
+                    <p><strong>Code & Projects:</strong> Always check out my GitHub for the latest work.</p>
                 </div>
+            </div>
 
-                <div style="position: relative; margin-bottom: 40px; padding-left: 0px;">
-                    <h4 style="margin-bottom: 6px; font-weight: 600; font-size: 1.4rem; color: #181a1f;">
-                        Associate Developer
-                    </h4>
-                    <h5
-                        style="color: #5b6068; margin-top: 0; margin-bottom: 10px; font-weight: 400; font-style: italic;">
-                        Kaptius, Hyderabad
-                    </h5>
-                    <p style="margin: 0; font-style: italic; font-weight: 500; color: #0077cc;">
-                        Jan 2024 – Sep 2024
-                    </p>
+            <div class="contact-card">
+                <h4 class="card-title">Get in Touch</h4>
+                <p class="card-subtitle">You can reach me anytime through these platforms.</p>
+
+                <div class="contact-links-list">
+
+                    <div class="link-item">
+                        <div class="icon-and-text">
+                            <i class="fas fa-envelope"></i>
+                            <strong>Email</strong>
+                        </div>
+                        <a href="mailto:adityathirumala20@gmail.com">adityathirumala20@gmail.com</a>
+                    </div>
+
+                    <div class="link-item">
+                        <div class="icon-and-text">
+                            <i class="fab fa-linkedin"></i>
+                            <strong>LinkedIn</strong>
+                        </div>
+                        <a href="https://www.linkedin.com/in/rohan-aditya-thirumala-6b8228264/" target="_blank"
+                            rel="noopener">/rohan-aditya-thirumala</a>
+                    </div>
+
+                    <div class="link-item">
+                        <div class="icon-and-text">
+                            <i class="fab fa-github"></i>
+                            <strong>GitHub</strong>
+                        </div>
+                        <a href="https://github.com/aytid" target="_blank" rel="noopener">@aytid</a>
+                    </div>
+
+                    <div class="link-item">
+                        <div class="icon-and-text">
+                            <i class="fab fa-instagram"></i>
+                            <strong>Instagram</strong>
+                        </div>
+                        <a href="https://www.instagram.com/rohanaditya._" target="_blank"
+                            rel="noopener">@rohanaditya._</a>
+                    </div>
                 </div>
 
             </div>
+
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h3 class="section-title">Contact & Connect</h3>
-            <p class="section-sub">Feel free to reach out for collaborations or inquiries.</p>
-            <div>
-                <h4>Reach Me At</h4>
-                <p><strong>Email:</strong> <a href="mailto:adityathirumala20@gmail.com">adityathirumala20@gmail.com</a>
-                </p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rohan-aditya-thirumala-6b8228264/"
-                        target="_blank" rel="noopener">rohan-aditya-thirumala</a></p>
-                <p><strong>GitHub:</strong> <a href="https://github.com/aytid" target="_blank" rel="noopener">aytid</a>
-                </p>
-                <p><strong>Instagram:</strong> <a href="https://www.instagram.com/rohanaditya._" target="_blank"
-                        rel="noopener">rohanaditya._</a></p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
+
+
+
+
+
     <footer>
         <div class="footer-wrap">
             <div>
@@ -435,7 +441,6 @@
         </div>
     </footer>
 
-    <!-- Scripts (same as original) -->
     <script>
         var hamburger = document.getElementById("hamburger");
         var mobileNav = document.getElementById("mobileNav");
@@ -579,9 +584,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
