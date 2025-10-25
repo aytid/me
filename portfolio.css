@@ -827,7 +827,7 @@ footer {
 
     .hero h2 {
         font-size: 26px;
-        line-height: 1.2
+        line-height: 1.2;
     }
 
     .section-title {
@@ -873,7 +873,7 @@ footer {
     }
 
     .contact-text-block h3 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .link-item {
@@ -906,3 +906,4 @@ footer {
         max-width: 100%;
     }
 }
+
